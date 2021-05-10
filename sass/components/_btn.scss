@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-family: "Mulish", sans-serif;
+  transition: all 0.1s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.btn-red {
+  background-color: var(--color-red);
+  box-shadow: 0 1rem 3rem var(--color-red);
+  color: #fff;
+  padding: 1.3rem 4rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.btn-play {
+  box-shadow: 0 1rem 3rem var(--color-red);
+  background-color: var(--color-red);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+
+  i {
+    color: #fff;
+    position: absolute;
+    top: 51%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+  }
+}

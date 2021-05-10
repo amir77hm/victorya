@@ -1,0 +1,80 @@
+.ourRecipes {
+  h2 {
+    text-align: center;
+    font-family: "Georgia";
+    font-size: 4rem;
+    color: #0c3653;
+    margin-bottom: 5rem;
+  }
+
+  .images {
+    display: flex;
+    transform: scale(1.1);
+    justify-content: center;
+
+    .img {
+      margin: 1rem;
+      width: 100%;
+
+      &:nth-child(2) {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color: #0b314b, $alpha: 0.66);
+          border-radius: 0.6rem;
+        }
+
+        .description {
+          position: absolute;
+          bottom: -2rem;
+          left: 0;
+          width: 100%;
+          height: 40%;
+          z-index: 3;
+          color: #fff;
+          padding: 0 3rem;
+
+          h3 {
+            font-family: "Georgia";
+            font-size: 2.8rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+          }
+
+          .arrow {
+            width: 9rem;
+            height: 4rem;
+            content: "";
+            position: absolute;
+            bottom: 2rem;
+            right: 0;
+            background-color: var(--color-red);
+            border-radius: 0 0 0.6rem 0;
+
+            i {
+              font-size: 3rem;
+              position: absolute;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              left: 50%;
+            }
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.6rem;
+      }
+    }
+  }
+}

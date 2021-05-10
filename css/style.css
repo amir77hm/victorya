@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;0,700;0,800;0,900;1,400&display=swap");
+@font-face {
+  font-family: "painter";
+  src: url("../fonts/Painter_PERSONAL_USE_ONLY.ttf"); }
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia.ttf"); }
+
+:root {
+  --color-red: #f98169; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+p {
+  font-family: "Mulish"; }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-family: "Mulish", sans-serif;
+  transition: all 0.1s; }
+  .btn:hover {
+    transform: translateY(-2px); }
+
+.btn-red {
+  background-color: var(--color-red);
+  box-shadow: 0 1rem 3rem var(--color-red);
+  color: #fff;
+  padding: 1.3rem 4rem;
+  font-weight: 700;
+  font-size: 1.4rem; }
+
+.btn-play {
+  box-shadow: 0 1rem 3rem var(--color-red);
+  background-color: var(--color-red);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  position: relative; }
+  .btn-play i {
+    color: #fff;
+    position: absolute;
+    top: 51%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5rem 0;
+  width: 55%; }
+  .navigation__logo h1 {
+    color: #452268;
+    font-family: "painter";
+    font-size: 2.8rem; }
+  .navigation__menu {
+    flex-basis: 60%; }
+    .navigation__menu ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center; }
+  .navigation__item {
+    width: 25%; }
+  .navigation__link {
+    color: #abadae;
+    font-size: 1.5rem;
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    transition: all 0.2s; }
+    .navigation__link:hover {
+      color: #0a4065;
+      font-weight: 900; }
+
+.header {
+  background: no-repeat url("../img/header.png") center center/cover;
+  width: 100%;
+  height: 105vh;
+  position: relative; }
+  .header .content {
+    font-family: "Mulish", sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    .header .content h2 {
+      font-size: 5rem;
+      font-weight: 100;
+      line-height: 1.3;
+      color: #255a7e; }
+      .header .content h2 span {
+        display: block; }
+    .header .content p {
+      color: #0c3653;
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin: 5rem 0;
+      opacity: 0.7; }
+      .header .content p span {
+        display: block; }
+    .header .content .row {
+      display: flex;
+      align-items: center; }
+      .header .content .row p {
+        margin: 0 4rem;
+        color: #0b314b;
+        opacity: 0.5; }
+
+.aboutUs {
+  background: no-repeat url("../img/lcz9nxhoslo-brooke-lark.png") center center/cover; }
+  .aboutUs .row-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10rem 0 0 0;
+    align-items: center; }
+    .aboutUs .row-1 .img {
+      width: 80%; }
+      .aboutUs .row-1 .img img {
+        box-shadow: 0 1rem 3rem #c5c9cb;
+        border-radius: 8rem 0 8rem 0; }
+    .aboutUs .row-1 .images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 0.3rem;
+      column-gap: 1.6rem; }
+      .aboutUs .row-1 .images .image:nth-child(1) {
+        align-self: end;
+        justify-self: end;
+        margin-top: 12rem; }
+      .aboutUs .row-1 .images .image:nth-child(2) {
+        margin-left: -1rem; }
+      .aboutUs .row-1 .images .image:nth-child(3) {
+        margin-right: -0.8rem; }
+      .aboutUs .row-1 .images .image:nth-child(4) {
+        margin-top: -4rem; }
+      .aboutUs .row-1 .images .image img {
+        border-radius: 1rem; }
+    .aboutUs .row-1 .content {
+      width: 90%; }
+      .aboutUs .row-1 .content h2 {
+        color: #0c3653;
+        font-family: "Georgia";
+        font-weight: bold;
+        font-size: 3.4rem; }
+      .aboutUs .row-1 .content p {
+        color: #8b8e8f;
+        margin: 4rem 0;
+        font-size: 1.4rem;
+        line-height: 2; }
+      .aboutUs .row-1 .content a {
+        margin-top: 2rem; }
+
+.ourStory .box {
+  background: no-repeat url("../img/zv0lvbep.png") center center/cover;
+  position: relative;
+  border-radius: 1rem;
+  color: #fff;
+  z-index: -2;
+  text-align: center;
+  padding: 7rem 0;
+  margin: 8rem auto;
+  width: 90%; }
+  .ourStory .box::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 64, 101, 0.4);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    z-index: -1; }
+  .ourStory .box h2 {
+    font-family: "Georgia";
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 1.3;
+    padding: 0 10%; }
+  .ourStory .box .description {
+    padding: 0 20%;
+    font-size: 1.4rem;
+    line-height: 2;
+    margin: 2rem 0; }
+  .ourStory .box a {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    margin: 2rem; }
+  .ourStory .box p {
+    font-family: "Mulish";
+    font-size: 1.5rem; }
+
+.ourFoods h2 {
+  color: #0c3653;
+  text-align: center;
+  font-size: 4.2rem;
+  font-family: "Georgia";
+  font-weight: bold; }
+
+.ourFoods .description {
+  color: #aeb2b4;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 25%;
+  margin-top: 2rem; }
+
+.ourFoods .cards {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8%;
+  padding-top: 4rem; }
+  .ourFoods .cards .card {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+    .ourFoods .cards .card img {
+      width: 100%;
+      border-radius: 1rem 1rem 0 0; }
+    .ourFoods .cards .card .row {
+      display: flex;
+      font-family: "Georgia";
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 3rem; }
+      .ourFoods .cards .card .row h4 {
+        font-size: 2.4rem; }
+      .ourFoods .cards .card .row .price {
+        font-size: 2.5rem;
+        color: #f98169;
+        font-weight: bold;
+        padding-top: 1.4rem; }
+    .ourFoods .cards .card .text {
+      color: #aeb2b4;
+      font-size: 1.5rem;
+      padding: 0 3rem;
+      margin-bottom: 2rem; }
+
+.ourFoods .explore {
+  margin: 10rem 0;
+  text-align: center; }
+
+.ourRecipes h2 {
+  text-align: center;
+  font-family: "Georgia";
+  font-size: 4rem;
+  color: #0c3653;
+  margin-bottom: 5rem; }
+
+.ourRecipes .images {
+  display: flex;
+  transform: scale(1.1);
+  justify-content: center; }
+  .ourRecipes .images .img {
+    margin: 1rem;
+    width: 100%; }
+    .ourRecipes .images .img:nth-child(2) {
+      position: relative; }
+      .ourRecipes .images .img:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(11, 49, 75, 0.66);
+        border-radius: 0.6rem; }
+      .ourRecipes .images .img:nth-child(2) .description {
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        z-index: 3;
+        color: #fff;
+        padding: 0 3rem; }
+        .ourRecipes .images .img:nth-child(2) .description h3 {
+          font-family: "Georgia";
+          font-size: 2.8rem; }
+        .ourRecipes .images .img:nth-child(2) .description p {
+          font-size: 1.3rem; }
+        .ourRecipes .images .img:nth-child(2) .description .arrow {
+          width: 9rem;
+          height: 4rem;
+          content: "";
+          position: absolute;
+          bottom: 2rem;
+          right: 0;
+          background-color: var(--color-red);
+          border-radius: 0 0 0.6rem 0; }
+          .ourRecipes .images .img:nth-child(2) .description .arrow i {
+            font-size: 3rem;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%; }
+    .ourRecipes .images .img img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.6rem; }
+
+.updates {
+  margin: 15rem 0;
+  position: relative; }
+  .updates h2 {
+    text-align: center;
+    font-family: "Georgia";
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #0c3653;
+    padding-bottom: 1rem; }
+  .updates__box {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 4rem 0;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    position: relative; }
+    .updates__box::before, .updates__box::after {
+      position: absolute;
+      content: "";
+      transform: translate(50%, 50%);
+      background-image: radial-gradient(circle, rgba(49, 46, 42, 0.18) 0, rgba(49, 46, 42, 0.18) 1px, transparent 2px);
+      width: 20rem;
+      height: 20rem;
+      background-size: 15px 15px;
+      z-index: -1; }
+    .updates__box::before {
+      bottom: 80%;
+      left: -15%; }
+    .updates__box::after {
+      bottom: 17%;
+      left: 77%; }
+    .updates__box .input-group {
+      font-family: "Mulish", sans-serif;
+      padding: 2rem 0; }
+      .updates__box .input-group .form-control {
+        font-size: 2rem;
+        padding: 0 2rem;
+        background-color: #f9fbfb;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        width: 40%;
+        height: 5rem; }
+        .updates__box .input-group .form-control:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.02); }
+        .updates__box .input-group .form-control::placeholder {
+          color: #ccc; }
+      .updates__box .input-group .submit {
+        background-color: var(--color-red);
+        color: #fff;
+        font-size: 2rem;
+        border-radius: 0 5px 5px 0;
+        padding: 0 3rem;
+        margin-left: -3px;
+        border: none;
+        height: 5rem;
+        cursor: pointer; }
+        .updates__box .input-group .submit i {
+          transition: all 0.3s;
+          padding: 0 1rem; }
+        .updates__box .input-group .submit:hover i {
+          transform: scale(1.5); }
+
+.footer {
+  position: relative; }
+  .footer::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-image: url("../img/eaters-collective-132773-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position: 6% 35%;
+    width: 60%;
+    height: 200%;
+    z-index: -2; }
+  .footer .navigation {
+    width: 50%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-top: 2px solid rgba(0, 0, 0, 0.05);
+    padding: 2rem; }
+    .footer .navigation__menu {
+      flex-basis: 75%; }
+  .footer .social {
+    padding: 2rem; }
+    .footer .social i {
+      font-size: 1.5rem; }
+      .footer .social i:not(:last-child) {
+        margin-right: 1rem; }
+  .footer .copy-right {
+    padding: 4rem 0;
+    color: rgba(171, 173, 174, 0.66);
+    font-size: 1.5rem; }

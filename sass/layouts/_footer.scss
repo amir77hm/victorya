@@ -1,0 +1,45 @@
+.footer {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-image: url("../img/eaters-collective-132773-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position: 6% 35%;
+    width: 60%;
+    height: 200%;
+    z-index: -2;
+  }
+
+  .navigation {
+    width: 50%;
+    border-bottom: 2px solid rgba($color: #000000, $alpha: 0.05);
+    border-top: 2px solid rgba($color: #000000, $alpha: 0.05);
+    padding: 2rem;
+
+    &__menu {
+      flex-basis: 75%;
+    }
+  }
+
+  .social {
+    padding: 2rem;
+
+    i {
+      font-size: 1.5rem;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .copy-right {
+    padding: 4rem 0;
+    color: rgba($color: #abadae, $alpha: 0.66);
+    font-size: 1.5rem;
+  }
+}

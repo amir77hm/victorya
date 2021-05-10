@@ -1,0 +1,63 @@
+.ourFoods {
+  h2 {
+    color: #0c3653;
+    text-align: center;
+    font-size: 4.2rem;
+    font-family: "Georgia";
+    font-weight: bold;
+  }
+
+  .description {
+    color: #aeb2b4;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 25%;
+    margin-top: 2rem;
+  }
+
+  .cards {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8%;
+    padding-top: 4rem;
+
+    .card {
+      box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.1);
+
+      img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+      }
+      .row {
+        display: flex;
+        font-family: "Georgia";
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3rem;
+
+        h4 {
+          font-size: 2.4rem;
+        }
+        .price {
+          font-size: 2.5rem;
+          color: #f98169;
+          font-weight: bold;
+          padding-top: 1.4rem;
+        }
+      }
+      .text {
+        color: #aeb2b4;
+        font-size: 1.5rem;
+        padding: 0 3rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .explore {
+    margin: 10rem 0;
+    // margin: 0 auto;
+    text-align: center;
+  }
+}
